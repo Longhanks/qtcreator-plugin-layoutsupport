@@ -1,0 +1,14 @@
+{
+    "Name" : "layoutsupport",
+    "Version" : "${layoutsupport_VERSION_MAJOR}.${layoutsupport_VERSION_MINOR}.${layoutsupport_VERSION_PATCH}",
+    "CompatVersion" : "${layoutsupport_VERSION_MAJOR}.${layoutsupport_VERSION_MINOR}.${layoutsupport_VERSION_PATCH}",
+    "Vendor" : "Andreas Schulz",
+    "Copyright" : "(C) 2019 Andreas Schulz",
+    "License" : "MIT",
+    "Category" : "Qt Creator",
+    "Description" : "Layout support for additional plugins for Qt Creator.",
+    "Url" : "https://github.com/Longhanks/qtcreator-plugin-layoutsupport",
+    "Dependencies" : [
+        { "Name" : "Core", "Version" : "${QTCREATOR_VERSION}" }
+    ]
+}
