@@ -33,4 +33,16 @@ bool LayoutSupportPlugin::initialize(
 
 void LayoutSupportPlugin::extensionsInitialized() {}
 
+ExtensionSystem::IPlugin::ShutdownFlag LayoutSupportPlugin::aboutToShutdown() {
+    QMainWindow *mainWindow = Core::ICore::mainWindow();
+    auto *wrapper = mainWindow->centralWidget();
+    auto *originalCentralWidget =
+        wrapper->layout()->itemAt(wrapper->layout()->count() - 1)->widget();
+
+    mainWindow->setCentralWidget(originalCentralWidget);
+    delete wrapper;
+
+    return SynchronousShutdown;
+}
+
 } // namespace LayoutSupport::Internal
