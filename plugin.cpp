@@ -7,7 +7,7 @@
 
 namespace LayoutSupport::Internal {
 
-LayoutSupportPlugin::LayoutSupportPlugin() {}
+LayoutSupportPlugin::LayoutSupportPlugin() noexcept {}
 
 bool LayoutSupportPlugin::initialize(
     [[maybe_unused]] const QStringList &arguments,

@@ -2,6 +2,9 @@
 
 Layout support for additional plugins for [Qt Creator](http://qt-project.org/wiki/Category:Tools::QtCreator).
 
+
+[![Actions Status](https://github.com/Longhanks/qtcreator-plugin-layoutsupport/workflows/Continuous%20Integration/badge.svg)](https://github.com/Longhanks/qtcreator-plugin-layoutsupport/actions)
+
 ## Copyright / License
 
 Copyright (C) 2019 Andreas Schulz. All rights reserved.
