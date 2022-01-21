@@ -34,7 +34,7 @@ The main difference here is that on Linux - since most distributions ship quite 
 
 ```sh
 mkdir build && cd build
-cmake .. --log-level=DEBUG -DCMAKE_BUILD_TYPE=Release -DQTCREATOR_SRC="~/Downloads/qt-creator-opensource-src-5.0.1" -DQTCREATOR_BIN="/usr/bin/qtcreator -DQTCREATOR_VERSION="5.0.1"
+cmake .. -DCMAKE_BUILD_TYPE=Release -DQTCREATOR_SRC="~/Downloads/qt-creator-opensource-src-5.0.1" -DQTCREATOR_BIN="/usr/bin/qtcreator -DQTCREATOR_VERSION="5.0.1"
 make
 sudo make install
 ```
